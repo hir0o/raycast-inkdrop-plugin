@@ -1,0 +1,48 @@
+{
+  "$schema": "https://www.raycast.com/schemas/extension.json",
+  "name": "raycast-inkdrop-serch-note",
+  "title": "raycast-inkdrop-serch-note",
+  "description": "",
+  "icon": "command-icon.png",
+  "author": "hir0o",
+  "license": "MIT",
+  "commands": [
+    {
+      "name": "inkdrop-serch-note",
+      "title": "Inkdrop Serch Note",
+      "description": "",
+      "mode": "view"
+    },
+    {
+      "name": "inkdrop-create-note",
+      "title": "Inkdrop Create Note",
+      "description": "",
+      "mode": "view"
+    }
+  ],
+  "dependencies": {
+    "@raycast/api": "^1.29.1"
+  },
+  "devDependencies": {
+    "@types/eslint": "^8.4.1",
+    "@types/node": "~16.10.0",
+    "@types/prettier": "^2.4.4",
+    "@types/react": "^17.0.28",
+    "@types/react-devtools": "^3.6.0",
+    "@typescript-eslint/eslint-plugin": "^5.0.0",
+    "@typescript-eslint/parser": "^5.0.0",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "prettier": "^2.5.1",
+    "react-devtools": "^4.19.2",
+    "typescript": "^4.4.3",
+    "typesync": "^0.8.0"
+  },
+  "scripts": {
+    "build": "ray build -e dist",
+    "dev": "ray develop",
+    "fix-lint": "ray lint --fix",
+    "lint": "ray lint",
+    "preinstall": "typesync || :"
+  }
+}
