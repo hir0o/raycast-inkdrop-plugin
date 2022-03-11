@@ -17,3 +17,8 @@ export type Note = {
   tags: string[];
   _id: string;
 };
+
+export type Auth = {
+  username: string;
+  password: string;
+};
