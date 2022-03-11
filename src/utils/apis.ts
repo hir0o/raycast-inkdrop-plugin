@@ -5,8 +5,8 @@ export const getBooks = async () => {
   return axiosGet<Book[]>("books");
 };
 
-export const getNotesFromBook = async (bookName: string) => {
-  return axiosGet<Note[]>(`notes?keyword=title:template`);
+export const getNotes = async (keyword: string) => {
+  return axiosGet<Note[]>(`notes?keyword=${keyword}`);
 };
 
 export const createNote = async ({ bookId, title, body }: Record<"bookId" | "title" | "body", string>) => {
